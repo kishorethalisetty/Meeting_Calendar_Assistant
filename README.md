@@ -39,6 +39,7 @@ The API will be accessible at http://localhost:8080.
 ```http
 POST http://localhost:8080/api/meetings/add-employee?id=1&name=John
 ```
+![Add an Employee](https://github.com/kishorethalisetty/Meeting_Calendar_Assistant/blob/main/AddEmployee.png)
 
 ### 2. Book a Meeting
 - **URL**: `POST /api/meetings/book/{ownerId}`
@@ -55,6 +56,7 @@ Content-Type: application/json
   "participantIds": [2, 3]
 }
 ```
+![Book a Meeting](https://github.com/kishorethalisetty/Meeting_Calendar_Assistant/blob/main/BookMeeting.png)
 
 ### 3. Find Free Time Slots
 - **URL**: `POST /api/meetings/find-free-slots`
@@ -71,6 +73,7 @@ Content-Type: application/json
   "duration": "PT30M"
 }
 ```
+![Find Free Time Slots](https://github.com/kishorethalisetty/Meeting_Calendar_Assistant/blob/main/Find_Free_Slot.png)
 ### 4. Check Meeting Conflicts
 - **URL**: `POST /api/meetings/check-conflicts`
 - **Description**: Checks if any participants have scheduling conflicts with a proposed meeting time.
@@ -86,6 +89,7 @@ Content-Type: application/json
   "participantIds": [1, 2]
 }
 ```
+![Check Meeting Conflicts](https://github.com/kishorethalisetty/Meeting_Calendar_Assistant/blob/main/check_Conflicts.png)
 
 ### 5. Get All Employees
 - **URL**: `GET /api/meetings/employees`
@@ -94,4 +98,5 @@ Content-Type: application/json
 ```http
 GET http://localhost:8080/api/meetings/employees
 ```
+![Get All Employees](https://github.com/kishorethalisetty/Meeting_Calendar_Assistant/blob/main/Get_All_Employees.png)
 
